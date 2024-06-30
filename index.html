@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+        <source src="gif.mp4" type="video/mp4">
+      </video>
+        <nav>
+    <a href="" class="logo">LM Cafe</a>
+    <ul class="nav-links">
+      <li class="li-times"><a href="index.html" class="ul-link">Home</a> <span class="times-icon"><i class="fas fa-times"></i></span></li>
+      <li><a href="menu.html" class="ul-link">Menu</a></li>
+      <li><a href="contact.html" class="ul-link">Contact</a></li>
+      <li><a href="" class="ul-link ul-reserve">Reservations</a></li>
+      <li><a href="#footer" class="ul-link">About</a></li>
+
+    </ul>
+      <div class="hamburger"><i class="fas fa-bars bars"></i>
+      </div>
+    </nav>
+
+        <div class="hero-text">
+            
+          <h1>
+            Where Coffee Meets Community
+          </h1>
+          <a href="#Explore-section">Explore</a>
+        </div>
+
+      </div>
+
+  <!-- content section -->
+   <section id="Explore-section">
+    <div class="container">
+      <div class="flex-content">
+       <!-- dynamically added the content -->
+      </div>
+    </div>
+   </section>
+   <!-- Footer -->
+   <section id="footer">
+    <div class="wrapper">
+    <footer class="foooter">
+      <div><h3>Let's Talk!</h3>
+      <p>
+      Tell us about your idea  and we will work on it together
+      </p>
+      <p style="font-weight: bold; opacity: 1;">Reach us via provided sources </p>
+      </div>
+      <div>
+      <a href="contact.html" class="btn">Contact Us</a>
+        
+      </div>
+      <div class="icon-div">
+       <p> Follow us on:</p>
+        <div><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fas fa-phone-alt"></i></div>
+      </div>
+
+    </footer>
+  </div>
+
+<span class="up-arrow" onclick="scrollToTop()">&#8593;</span>
+   </section>
+
+   <script>
+    window.addEventListener('scroll', function() {
+   var upArrow = document.querySelector('.up-arrow');
+   var heroHeight = document.querySelector('.hero').offsetHeight;
+  
+   if (window.scrollY > heroHeight) {
+     upArrow.style.display = 'block';
+   } else {
+     upArrow.style.display = 'none';
+   }
+ });
+ function scrollToTop() {
+       window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+       });
+     }
+ 
+   </script>
+   <!-- <script src="menu.js"></script> -->
+   <script src="product.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>

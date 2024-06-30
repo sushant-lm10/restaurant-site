@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+*{
+  border: none;
+  outline: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper-search">
+<div id="search-container">
+  <input
+  type="search"
+  id="search-input"
+  placeholder="Search here..."
+/>
+<button id="search">Search</button>
+</div>
+<div id="buttons">
+  <button class="button-value" onclick="filterProduct('all')">All</button>
+  <button class="button-value" onclick="filterProduct('Cakes')">
+    Cakes
+  </button>
+  <button class="button-value" onclick="filterProduct('Icecream')">
+    Ice cream
+  </button>
+  <button class="button-value" onclick="filterProduct('Drinks')">
+    Drinks
+  </button>
+  <button class="button-value" onclick="filterProduct('Other')">
+    Other
+  </button>
+</div>
+<div class="grid">
+</div>
+</div>
+<script src="menu.js"></script>
+</body>
+</html>
